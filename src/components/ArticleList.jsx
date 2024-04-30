@@ -14,10 +14,10 @@ const ArticleList = ({ posts, onEdit, onDelete }) => {
               <Card.Title dangerouslySetInnerHTML={{ __html: post.title.rendered }} />
               <Card.Text dangerouslySetInnerHTML={{ __html: post.excerpt.rendered }} />
               <Button variant="info" onClick={() => onEdit(post)}>
-                Modifica
+                modify
               </Button>{" "}
               <Button variant="danger" onClick={() => onDelete(post.id)}>
-                Elimina
+                Delete
               </Button>
             </Card.Body>
           </Card>
